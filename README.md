@@ -6,4 +6,4 @@ You should install discord.py with pip :
 ```
 $ pip install -U discord.py
 ```
-Please change "Token" and "MyChannel ID" to your own to ensure it works properly.
+Please change "Token" and "MyChannelID" to your own to ensure it works properly.
