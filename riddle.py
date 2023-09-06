@@ -7,7 +7,7 @@ intents.message_content = True
 client = discord.Client(intents = intents)
 
 Token = "YOUR_TOKEN"
-MyChannel = "YOUR_CHANNEL_ID"
+MyChannelID = "YOUR_CHANNEL_ID"
 
 num = 1
 
@@ -15,17 +15,17 @@ num = 1
 async def open():
     global num
 
-    channel = client.get_channel(MyChannel)
+    channel = client.get_channel(MyChannelID)
     message = "第 " + str(num) + " 關 開關！"
     await channel.send(message)
     time.sleep(870)
 
-    channel = client.get_channel(MyChannel)
+    channel = client.get_channel(MyChannelID)
     message = "第 " + str(num) + " 關 閉關！"
     await channel.send(message)
     time.sleep(30)
     
-    channel = client.get_channel(MyChannel)
+    channel = client.get_channel(MyChannelID)
     if num != 10:
         message = "第 " + str(num) + " 關 換關！"
     else:
