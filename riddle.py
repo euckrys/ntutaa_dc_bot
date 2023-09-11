@@ -6,7 +6,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 client = discord.Client(intents=intents)
 
-Token = "MTE0ODU2MzQ5NzQxNjkxNzA1Mg.GweMMN.y5cuWoXooV6C8cM6npwfDFdHOY5Em_FXJ-CxVw"
+Token = "YOUR_TOKEN"
 
 num = 1
 
