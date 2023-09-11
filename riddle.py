@@ -21,16 +21,11 @@ match mode:
 
 
 with open(filename, mode="r") as file_object:
-    MyChannelID = file_object.readline()
-    MyChannelID = int(MyChannelID.strip('\n'))
-    level_count = file_object.readline()
-    level_count = int(level_count.strip('\n'))
-    time_open = file_object.readline()
-    time_open = int(time_open.strip('\n'))
-    time_close = file_object.readline()
-    time_close = int(time_close.strip('\n'))
-    time_change = file_object.readline()
-    time_change = int(time_change.strip('\n'))
+    MyChannelID = int(file_object.readline().strip('\n'))
+    level_count = int(file_object.readline().strip('\n'))
+    time_open = int(file_object.readline().strip('\n'))
+    time_close = int(file_object.readline().strip('\n'))
+    time_change = int(file_object.readline().strip('\n'))
 
 
 @tasks.loop(count=level_count)
