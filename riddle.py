@@ -6,8 +6,6 @@ intents = discord.Intents.default()
 intents.message_content = True
 client = discord.Client(intents=intents)
 
-Token = "MTE0ODU2MzQ5NzQxNjkxNzA1Mg.GF7-jp.93Q62EyPQcaZYeM7rjyi97y_063hmqRbx94K3U"
-
 num = 7
 
 mode = input("Please choose your mode : ")
